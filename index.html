@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lojão Do Brás</title>
+    <title>Loja Stranger Things</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- TÍTULO -->
-    <h1>🛒 Lojão do Brás SEDUC 🛒 </h1>
-
-
-
-    <!-- CONTAINER PRINCIPAL -->
-    <div class="container">
-
-
-
-        <!-- ÁREA DOS PRODUTOS -->
-        <div class="produtos" id="produtos">
-
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1 class="logo-stranger">STRANGER<br><span>THINGS</span></h1>
+            <button onclick="entrarNaLoja()" class="btn-entrar">ENTRAR NO MUNDO INVERTIDO</button>
         </div>
-
-
-
-
-
-        <!-- CARRINHO -->
-        <div class="carrinho">
-
-            <h2>Carrinho</h2>
-
-
-
-            <!-- LISTA DOS ITENS -->
-            <div id="listaCarrinho"></div>
-
-
-
-            <!-- TOTAL -->
-            <div class="total" id="total">
-
-                Total: R$ 0
-
-            </div>
-
-        </div>
-
     </div>
 
+    <div id="loja-content" style="display: none;">
+        <h1>Loja Stranger Things</h1>
+        <div class="container">
+            <div class="produtos" id="produtos"></div>
+            <div class="carrinho">
+                <h2>Seu Carrinho</h2>
+                <div id="listaCarrinho"></div>
+                <div class="total" id="total">Total: R$ 0 </div>
+            </div>
+        </div>
+    </div>
 
-
-    <!-- IMPORTANDO JAVASCRIPT -->
     <script src="script.js"></script>
-
 </body>
-
 </html>
